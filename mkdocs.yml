@@ -1,0 +1,54 @@
+docs_dir: docs/book
+site_dir: docs/html
+extra:
+  project: Components
+  current_version: v3
+  versions:
+    - v3
+    - v2
+    - v1
+nav:
+    - Home: index.md
+    - v3:
+      - Intro: v3/intro.md
+      - Reference:
+          - "Installation and Requirements": v3/install.md
+          - Usage: v3/usage.md
+          - Middleware: v3/middleware.md
+          - "Error Handlers": v3/error-handlers.md
+          - "Creating Middleware": v3/creating-middleware.md
+          - "Composing middleware": v3/executing-middleware.md
+          - "API Reference": v3/api.md
+          - Migration: v3/migration.md
+    - v2:
+        - "Installation and Requirements": v2/install.md
+        - Usage: v2/usage.md
+        - Middleware: v2/middleware.md
+        - "Error Handlers": v2/error-handlers.md
+        - "Creating Middleware": v2/creating-middleware.md
+        - "Executing and composing middleware": v2/executing-middleware.md
+        - "API Reference": v2/api.md
+        - Migration: v2/migration.md
+    - v1:
+        - "Installation and Requirements": v1/install.md
+        - Usage: v1/usage.md
+        - Middleware: v1/middleware.md
+        - "Error Handlers": v1/error-handlers.md
+        - "Creating Middleware": v1/creating-middleware.md
+        - "Executing and composing middleware": v1/executing-middleware.md
+        - "API Reference": v1/api.md
+site_name: laminas-stratigility
+site_description: laminas-stratigility
+repo_url: 'https://github.com/laminas/laminas-stratigility'
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        install.md: v3/install.md
+        usage.md: v3/usage.md
+        middleware.md: v3/middleware.md
+        error-handlers.md: v3/error-handlers.md
+        creating-middleware.md: v3/creating-middleware.md
+        executing-middleware.md: v3/executing-middleware.md
+        api.md: v3/api.md
+        migration.md: v3/migration.md
