@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
 namespace Laminas\Stratigility;
 
@@ -75,15 +75,6 @@ final class MiddlewarePipe implements MiddlewarePipeInterface
     {
         return (new Next($this->pipeline, $handler))->handle($request);
     }
-
-    /**
-     * Attach middleware to the pipeline.
-     */
-    public function pipe(MiddlewareInterface $middleware): void
-    {
-        $this->pipeline->enqueue($middleware);
-    }
-
 
     /**
      * Attach middleware to the pipeline.
